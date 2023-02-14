@@ -1,0 +1,14 @@
+corupsDir: corpus
+# intialize: contracts/crytic/init.json
+testMode: assertion
+testLimit: 10000
+shrinkLimit: 500
+testMaxGas: 100000000000
+timeout: 3600 # 1 hour
+codeSize: 0xffffffffff #maximize code size
+# sender: []
+filterFunctions: []
+estimateGas: true
+# provide solc remappings to crytic-compile
+cryticArgs: ['--solc-remaps', '@openzeppelin/=$(pwd)/node_modules/@openzeppelin/']
+cryticArgs: ['--solc-remaps', '@chainlink/=$(pwd)/node_modules/@chainlink/']

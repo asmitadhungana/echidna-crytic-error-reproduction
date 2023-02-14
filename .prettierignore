@@ -1,0 +1,15 @@
+*/**/*.test.ts
+src/frontend/generated/*
+*/build
+*/dist
+*/node_modules
+contracts/typechain*
+k8s
+images
+scripts
+*/scripts
+contracts/artifacts
+*/.env*
+crypto/snarkjs.min.js
+library/src/lib/snarkjs.min.js
+.github
